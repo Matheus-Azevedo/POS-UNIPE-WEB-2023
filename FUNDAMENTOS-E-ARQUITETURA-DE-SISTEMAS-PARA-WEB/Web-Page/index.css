@@ -5,6 +5,16 @@ body {
   padding: 0; /* Remove preenchimento padrão para cobrir toda a página */
 }
 
+button {
+  background-color: #4caf50;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .title {
   font-weight: bold;
   text-align: center;
