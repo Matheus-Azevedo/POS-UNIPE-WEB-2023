@@ -8,6 +8,18 @@ body {
 button {
   background-color: #4caf50;
   border-radius: 10px;
+  transition: box-shadow 0.3s; /* Adicione uma transição suave para suavizar a mudança */
+  margin: 3px;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicione uma sombra ao passar o mouse */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 a {
