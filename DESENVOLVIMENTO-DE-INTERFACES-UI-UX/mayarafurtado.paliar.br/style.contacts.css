@@ -1,0 +1,157 @@
+:root {
+  --green-paliar: #738a5d;
+  --green-light-paliar: #dbecdf;
+  --brown-paliar: #766b6a;
+}
+
+.green-paliar {
+  color: var(--green-paliar);
+}
+
+.green-light-paliar {
+  color: var(--green-light-paliar);
+}
+
+.brown-paliar {
+  color: var(--brown-paliar);
+}
+
+.contacts-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.contacts-container-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100vw; /* 100% of the viewport width */
+}
+
+.contacts-container-paragraphe {
+  margin-top: -1rem;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.contacts-container-forms {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  color: var(--green-paliar);
+}
+
+.contacts-container-forms label {
+  display: flex;
+}
+
+.contacts-container-forms label span {
+  min-width: 120px;
+}
+
+.contacts-container-forms input,
+.contacts-container-forms textarea,
+.contacts-container-forms button {
+  border: 0.1rem solid var(--green-paliar);
+  border-radius: 1rem;
+}
+
+.contacts-container-forms input,
+.contacts-container-forms button {
+  height: 2.5rem;
+}
+
+.contacts-container-forms button {
+  background-color: var(--green-paliar);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100px;
+}
+
+.contacts-container-forms button:hover {
+  background-color: var(--green-light-paliar);
+}
+
+.contacts-container-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 126vw;
+}
+
+.contacts-container-3 div {
+  display: flex;
+  gap: 1rem;
+}
+
+.contacts-container-3 nav {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: var(--brown-paliar);
+  font-weight: 700;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contacts-container-3 nav div:hover {
+  color: var(--green-paliar);
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-container-1 {
+    gap: 3rem;
+  }
+
+  .contacts-container-2,
+  .contacts-container-3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contacts-container-paragraphe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .contacts-container-forms {
+    align-items: center;
+    opacity: 0.6;
+  }
+
+  .contacts-container-forms label {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-container-forms label span {
+    min-width: auto;
+    margin-bottom: 0.3rem;
+  }
+
+  .contacts-container-forms input,
+  .contacts-container-forms textarea,
+  .contacts-container-forms button {
+    width: 15em;
+  }
+
+  .contacts-container-3 {
+    width: 150vw;
+  }
+
+  .contacts-container-3 nav {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-paliar: #738a5d;
+  --green-light-paliar: #dbecdf;
+  --brown-paliar: #766b6a;
+}
+
+.green-paliar {
+  color: var(--green-paliar);
+}
+
+.green-light-paliar {
+  color: var(--green-light-paliar);
+}
+
+.brown-paliar {
+  color: var(--brown-paliar);
+}
+
+.gradient-background {
+  background: linear-gradient(to right, var(--green-light-paliar), #ffffff);
+  height: 100vh; /* h-screen equivalent */
+}
+
+.logo {
+  background-image: url("./imgs/logo2.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  opacity: 0.1;
+}
+
+.logo-right {
+  background-position: bottom right;
+}
+
+.logo-center {
+  background-position: center center;
+}
+
+.logo-left {
+  background-position: bottom left;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    background-position: center center;
+  }
+
+  .gradient-background {
+    height: 120vh;
+  }
+}
