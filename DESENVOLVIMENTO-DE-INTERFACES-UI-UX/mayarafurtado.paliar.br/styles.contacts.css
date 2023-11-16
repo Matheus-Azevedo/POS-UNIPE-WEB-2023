@@ -1,21 +1,3 @@
-:root {
-  --green-paliar: #738a5d;
-  --green-light-paliar: #dbecdf;
-  --brown-paliar: #766b6a;
-}
-
-.green-paliar {
-  color: var(--green-paliar);
-}
-
-.green-light-paliar {
-  color: var(--green-light-paliar);
-}
-
-.brown-paliar {
-  color: var(--brown-paliar);
-}
-
 .contacts-container-1 {
   display: flex;
   flex-direction: column;

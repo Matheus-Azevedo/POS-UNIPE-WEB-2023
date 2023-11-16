@@ -1,0 +1,27 @@
+/* Padronização do arquivo */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definição da Paleta de Cores */
+
+:root {
+  --green-paliar: #738a5d;
+  --green-light-paliar: #dbecdf;
+  --brown-paliar: #766b6a;
+}
+
+.green-paliar {
+  color: var(--green-paliar);
+}
+
+.green-light-paliar {
+  color: var(--green-light-paliar);
+}
+
+.brown-paliar {
+  color: var(--brown-paliar);
+}
