@@ -1,0 +1,134 @@
+.home-container-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.home-container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.home-container-2 h1 {
+  font-size: 2rem;
+  color: var(--green-paliar);
+  font-weight: 900;
+}
+
+.home-container-2 p {
+  margin-top: -0.5rem;
+  font-size: 1rem;
+  color: var(--brown-paliar);
+  font-weight: 500;
+}
+
+.home-container-2 nav {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  color: var(--green-paliar);
+  font-weight: 700;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home-container-2 nav div:hover {
+  color: var(--brown-paliar);
+}
+
+.home-container-2 nav div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-container-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home-container-3 h1 {
+  font-size: 4rem;
+  color: var(--green-paliar);
+  font-weight: 900;
+}
+
+.home-container-3 p {
+  margin-top: -0.5rem;
+  text-align: justify;
+  font-size: 2rem;
+  color: var(--brown-paliar);
+  font-weight: 700;
+}
+
+.home-photo {
+  background-image: url("./imgs/avatar.jpg");
+  width: 400px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--green-paliar);
+}
+
+@media screen and (max-width: 768px) {
+  .home-container-1 {
+    margin-left: 0;
+    margin-right: 0;
+    /* margin-top: -10rem; */
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .home-container-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-container-2 nav {
+    font-size: 1rem;
+  }
+
+  .home-container-2 h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-container-2 p {
+    font-size: 0.8rem;
+  }
+
+  .home-container-3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .home-container-3 h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .home-container-3 p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .home-photo {
+    width: 200px;
+    height: 250px;
+  }
+}
