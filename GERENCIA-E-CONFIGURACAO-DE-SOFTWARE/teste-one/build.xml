@@ -1,0 +1,44 @@
+<project name="Sample Project" default="main" basedir=".">
+  
+  <description> A simple build file for this project. </description>
+  
+  <!-- Global Properties for this build file -->
+  <property name="source.dir" value="src" />
+  <property name="build.dir" value="target" />
+  <property name="docs.dir" value="docs" />
+
+ <!-- Generate javadocs for current project into ${docs.dir} -->
+	<target name="docs" description="generate documentation">
+		<javadoc sourcepath="${source.dir}" destdir="${docs.dir}">
+			 <fileset dir="."/>
+			<classpath refid="junit.class.path" />
+		</javadoc>	
+	</target>
+	
+	<!-- Create jar file --> 
+	<target name="package">
+			<mkdir dir="jar" />
+			<jar basedir="${build.dir}" destfile="jar/aplicacao.jar" />
+	</target>
+	
+	<!-- adicionando junit ao classpath -->
+	<path id="junit.class.path">
+		<pathelement location="lib/junit-4.12.jar" />
+		<pathelement location="lib/hamcrest-core-1.3.jar" />
+		<pathelement location="${build.dir}" />
+	</path>
+
+	<!--compile java sources-->
+	<target name="compile" description="compile java sources">
+		<javac srcdir="${source.dir}" destdir="${build.dir}" includeantruntime="false">
+			<classpath refid="junit.class.path" />
+		</javac>
+	</target>
+
+	<!--create directories-->
+	<target name="init" description="setup project directories">
+		<mkdir dir="${docs.dir}" />
+	</target>
+
+	<target name="main" depends="init, compile, package, docs" />
+</project>
